@@ -68,6 +68,9 @@ section h2 {
   font-family: 'Roboto', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
   letter-spacing: 1px;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
 }
 
 #mainNav .navbar-brand {
@@ -305,8 +308,8 @@ section.cta .cta-content {
   z-index: 1;
 }
 
-section.cta .cta-content h2 {
-  font-size: 50px;
+section.cta .cta-content h4 {
+  font-size: 80px;
   max-width: 450px;
   margin-top: 0;
   margin-bottom: 25px;
@@ -314,8 +317,20 @@ section.cta .cta-content h2 {
 }
 
 @media (min-width: 768px) {
-  section.cta .cta-content h2 {
+  section.cta .cta-content h4 {
     font-size: 80px;
+    max-width: 300px;
+    margin-bottom: 15px;
+    color: #f9f8fd;
+  }
+}
+
+@media (max-width: 768px) {
+  section.cta .cta-content h4 {
+    font-size: 37px;
+    max-width: 300px;
+    margin-bottom: 15px;
+    color: #f9f8fd;
   }
 }
 
